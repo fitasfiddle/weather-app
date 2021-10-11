@@ -92,9 +92,6 @@ export default function Search({ defaultCity, setWeatherData, setForecast }) {
           placeholder="Type a city name..."
           onChange={(event) => setCity(event.target.value)}
         />
-        <span onClick={getCoordinates} className="pin">
-          📍
-        </span>
         {showCityError && (
           <div className="error">
             The city was not found! <br /> Please check the spelling!
